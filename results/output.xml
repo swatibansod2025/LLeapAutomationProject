@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.4 on win32)" generated="2025-12-18T04:05:41.746077" rpa="false" schemaversion="5">
+<suite id="s1" name="LLeapAutomationProject" source="C:\Users\NOSBA1\AutomationProjects\practice projects\LLeapAutomationProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\NOSBA1\AutomationProjects\practice projects\LLeapAutomationProject\tests">
+<suite id="s1-s1-s1" name="Presentation Tests" source="C:\Users\NOSBA1\AutomationProjects\practice projects\LLeapAutomationProject\tests\presentation_tests.robot">
+<test id="s1-s1-s1-t1" name="connect to the session" line="40">
+<kw name="Setup" owner="config" type="SETUP">
+<kw name="Launch LLEAP Application" owner="config">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM}</arg>
+<arg>deviceName=WindowsPC</arg>
+<arg>automationName=Windows</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>ms:initialWindowState=Maximized</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2025-12-18T04:05:42.576427" elapsed="6.963095"/>
+</kw>
+<kw name="Maximize Window By Title" owner="desktop_library">
+<arg>${LSH_page_title}</arg>
+<doc>Reliably maximize a window by title or regex.
+Uses keyboard fallback for WPF / custom apps.</doc>
+<status status="PASS" start="2025-12-18T04:05:49.540521" elapsed="5.013865"/>
+</kw>
+<kw name="verify title" owner="common_utilities">
+<kw name="Get Window Title" owner="AppiumLibrary">
+<msg time="2025-12-18T04:05:54.575151" level="INFO">${actual_title} = Laerdal Simulation Home - v 8.7.3.10398</msg>
+<var>${actual_title}</var>
+<doc>Returns the current Webview window title.</doc>
+<status status="PASS" start="2025-12-18T04:05:54.554386" elapsed="0.020765"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual_title}</arg>
+<arg>${expected_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-18T04:05:54.575151" elapsed="0.000000"/>
+</kw>
+<arg>${HOME_PAGE_TITLE}</arg>
+<status status="PASS" start="2025-12-18T04:05:54.554386" elapsed="0.020765"/>
+</kw>
+<status status="PASS" start="2025-12-18T04:05:42.576427" elapsed="11.998724"/>
+</kw>
+<status status="PASS" start="2025-12-18T04:05:42.574916" elapsed="12.000235"/>
+</kw>
+<kw name="Select Coughing sound and play it" owner="healthy_patient_theme_page">
+<kw name="Click Child Element By Name" owner="desktop_library">
+<msg time="2025-12-18T04:06:09.697997" level="FAIL">TimeoutError: timed out</msg>
+<arg>${healthy_patient_theme_page_title}</arg>
+<arg>${sound_name_to_be_played}</arg>
+<arg>${control_type_for_vocals}</arg>
+<arg>2</arg>
+<doc>Click a child element safely with a wait/retry mechanism.</doc>
+<status status="FAIL" start="2025-12-18T04:05:54.583227" elapsed="15.130734">TimeoutError: timed out</status>
+</kw>
+<kw name="Click And Verify Disabled" owner="desktop_library">
+<arg>${healthy_patient_theme_page_title}</arg>
+<arg>${play_button_auto_id}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2025-12-18T04:06:09.715320" elapsed="0.000000"/>
+</kw>
+<arg>${sound_to_be_played}</arg>
+<status status="FAIL" start="2025-12-18T04:05:54.583227" elapsed="15.133121">TimeoutError: timed out</status>
+</kw>
+<kw name="CLick on CLose button" owner="healthy_patient_theme_page">
+<status status="NOT RUN" start="2025-12-18T04:06:09.716348" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-12-18T04:05:42.566399" elapsed="27.151464">TimeoutError: timed out</status>
+</test>
+<status status="FAIL" start="2025-12-18T04:05:41.836288" elapsed="27.916472"/>
+</suite>
+<status status="FAIL" start="2025-12-18T04:05:41.796727" elapsed="27.965513"/>
+</suite>
+<status status="FAIL" start="2025-12-18T04:05:41.756898" elapsed="28.017999"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LLeapAutomationProject" id="s1" pass="0" fail="1" skip="0">LLeapAutomationProject</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">LLeapAutomationProject.Tests</stat>
+<stat name="Presentation Tests" id="s1-s1-s1" pass="0" fail="1" skip="0">LLeapAutomationProject.Tests.Presentation Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
