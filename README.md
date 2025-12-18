@@ -1,7 +1,7 @@
 # LLeapAutomationProject
 
 ## 📌 Project Description
-This project contains automation scripts for LLeap application using Selenium and Java.
+This project contains automation scripts for LLeap application using Robot Framework , pywinauto , python and appium
 
 ## 🛠 Tech Stack
 - Robot framework
