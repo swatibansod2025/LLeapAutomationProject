@@ -9,41 +9,42 @@ This project contains automation scripts for LLeap application using Robot Frame
 - Appium
   
 ## 📂 Project Structure
+'''
 LLEPAUTOMATIONPROJECT/
 │
 ├── .venv/
 │
 ├── configs/
-│   └── config.robot
+│ └── config.robot
 │
 ├── customutilities/
-│   ├── __pycache__/
-│   ├── common_utilities.robot
-│   └── desktop_library.py
+│ ├── pycache/
+│ ├── common_utilities.robot
+│ └── desktop_library.py
 │
 ├── images/
 │
 ├── pages/
-│   ├── __pycache__/
-│   ├── add_license_page.robot
-│   ├── healthy_patient_theme_page.robot
-│   ├── help_page.robot
-│   ├── lardel_simulation_home_page.robot
-│   ├── selode_page.robot
-│   ├── select_simulator_page.robot
-│   ├── select_theme_page.robot
-│   ├── select_virtual_simulator_page.robot
-│   └── session_not_started_page.robot
+│ ├── pycache/
+│ ├── add_license_page.robot
+│ ├── healthy_patient_theme_page.robot
+│ ├── help_page.robot
+│ ├── lardel_simulation_home_page.robot
+│ ├── selode_page.robot
+│ ├── select_simulator_page.robot
+│ ├── select_theme_page.robot
+│ ├── select_virtual_simulator_page.robot
+│ └── session_not_started_page.robot
 │
 ├── results/
-│   ├── log.html
-│   ├── output.xml
-│   └── report.html
+│ ├── log.html
+│ ├── output.xml
+│ └── report.html
 │
 ├── tests/
-│   └── presentation_tests.robot
+│ └── presentation_tests.robot
 │
-└── README.md   (optional but recommended)
+└── README.md
 README.md
 
 ## 🚀 How to Run the Tests
